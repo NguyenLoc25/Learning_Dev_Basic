@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu Học Tập Web Cơ Bản - HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tài Liệu Học Tập Web Cơ Bản</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Tìm kiếm nội dung...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#html-section"><i class="fab fa-html5"></i> HTML</a></li>
+                    <li><a href="#css-section"><i class="fab fa-css3-alt"></i> CSS</a></li>
+                    <li><a href="#js-section"><i class="fab fa-js"></i> JavaScript</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HTML Section -->
+        <section id="html-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-html5 section-icon"></i>
+                <h2>HTML Fundamentals</h2>
+                <p class="section-description">The structural foundation of all web content</p>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Core Concepts -->
+                <article class="card concept-card">
+                    <div class="card-header">
+                        <h3>Core Concepts</h3>
+                        <span class="pill">Essential</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="definition-box">
+                            <h4>HTML Definition</h4>
+                            <p>HyperText Markup Language (HTML) forms the backbone of web content, providing semantic structure to documents displayed in browsers.</p>
+                        </div>
+                        
+                        <div class="structure-box">
+                            <h4>Document Anatomy</h4>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Content --&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Semantic Elements -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Semantic Markup</h3>
+                        <span class="pill">Modern</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="element-grid">
+                            <div class="element-item">
+                                <code>&lt;header&gt;</code>
+                                <p>Introductory content</p>
+                            </div>
+                            <div class="element-item">
+                                <code>&lt;nav&gt;</code>
+                                <p>Navigation links</p>
+                            </div>
+                            <div class="element-item">
+                                <code>&lt;main&gt;</code>
+                                <p>Primary content</p>
+                            </div>
+                            <div class="element-item">
+                                <code>&lt;article&gt;</code>
+                                <p>Self-contained content</p>
+                            </div>
+                            <div class="element-item">
+                                <code>&lt;section&gt;</code>
+                                <p>Thematic grouping</p>
+                            </div>
+                            <div class="element-item">
+                                <code>&lt;footer&gt;</code>
+                                <p>Closing content</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Form Elements -->
+                <article class="card interactive-card">
+                    <div class="card-header">
+                        <h3>Interactive Elements</h3>
+                        <span class="pill">Forms</span>
+                    </div>
+                    <div class="card-body">
+                        <form class="demo-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">Submit</button>
+                                <button type="reset" class="btn-secondary">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        <!-- CSS Section -->
+        <section id="css-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-css3-alt section-icon"></i>
+                <h2>CSS Styling</h2>
+                <p class="section-description">Visual presentation and layout systems</p>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Layout Systems -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Layout Systems</h3>
+                        <span class="pill">Critical</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="layout-tabs">
+                            <div class="tab active" data-tab="flexbox">Flexbox</div>
+                            <div class="tab" data-tab="grid">CSS Grid</div>
+                            <div class="tab" data-tab="float">Float</div>
+                        </div>
+                        
+                        <div class="tab-content active" id="flexbox">
+                            <h4>Flex Container Properties</h4>
+                            <ul class="property-list">
+                                <li><code>display: flex</code></li>
+                                <li><code>flex-direction</code></li>
+                                <li><code>justify-content</code></li>
+                                <li><code>align-items</code></li>
+                                <li><code>flex-wrap</code></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="grid">
+                            <h4>Grid Container Properties</h4>
+                            <ul class="property-list">
+                                <li><code>display: grid</code></li>
+                                <li><code>grid-template-columns</code></li>
+                                <li><code>grid-template-rows</code></li>
+                                <li><code>gap</code></li>
+                                <li><code>grid-template-areas</code></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Responsive Design -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Responsive Techniques</h3>
+                        <span class="pill">Adaptive</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="media-query-demo">
+                            <pre><code class="language-css">@media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }</code></pre>
+                        </div>
+                        
+                        <div class="unit-comparison">
+                            <h4>Relative Units</h4>
+                            <table class="units-table">
+                                <thead>
+                                    <tr>
+                                        <th>Unit</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>rem</code></td>
+                                        <td>Root element font-size</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>em</code></td>
+                                        <td>Parent element font-size</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>vw/vh</code></td>
+                                        <td>Viewport width/height</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        <!-- JavaScript Section -->
+        <section id="js-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-js section-icon"></i>
+                <h2>JavaScript Programming</h2>
+                <p class="section-description">Dynamic behavior and interactivity</p>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Core Syntax -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Language Fundamentals</h3>
+                        <span class="pill">ES6+</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="code-comparison">
+                            <div class="comparison-item">
+                                <h4>Variables</h4>
+                                <pre><code class="language-javascript">// Old
+    var name = 'John';
+    
+    // Modern
+    const PI = 3.14;
+    let counter = 0;</code></pre>
+                            </div>
+                            
+                            <div class="comparison-item">
+                                <h4>Functions</h4>
+                                <pre><code class="language-javascript">// Traditional
+    function add(a, b) {
+        return a + b;
+    }
+    
+    // Arrow
+    const multiply = (x, y) => x * y;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- DOM Manipulation -->
+                <article class="card interactive-card">
+                    <div class="card-header">
+                        <h3>DOM API</h3>
+                        <span class="pill">Interactive</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="dom-demo">
+                            <button id="demo-btn" class="btn-primary">Click Me</button>
+                            <div id="demo-output" class="output-box"></div>
+                        </div>
+                        
+                        <div class="code-reveal">
+                            <button class="btn-code-toggle">Show Code</button>
+                            <pre class="hidden"><code class="language-javascript">document.getElementById('demo-btn')
+        .addEventListener('click', () => {
+            const output = document.getElementById('demo-output');
+            output.textContent = 'Button clicked!';
+            output.classList.add('active');
+        });</code></pre>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Modern Features -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Modern JavaScript</h3>
+                        <span class="pill">ES2020+</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="feature-highlights">
+                            <div class="feature-item">
+                                <h4>Optional Chaining</h4>
+                                <pre><code class="language-javascript">const street = user?.address?.street;</code></pre>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <h4>Nullish Coalescing</h4>
+                                <pre><code class="language-javascript">const value = input ?? 'default';</code></pre>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <h4>Promise.allSettled()</h4>
+                                <pre><code class="language-javascript">const results = await Promise.allSettled(promises);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tài Liệu Học Tập Web Cơ Bản. Tất cả quyền được bảo lưu.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
